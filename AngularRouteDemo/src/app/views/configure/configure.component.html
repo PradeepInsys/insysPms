@@ -1,0 +1,30 @@
+<!-- <nav>
+	<a [routerLink]="['app-users']">Users</a> 
+	<a [routerLink]="['app-property']">Property</a>
+</nav> -->
+
+
+<nav class="navbar navbar-default">
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li class="active"><a [routerLink]="['app-users']">Users <span
+					class="sr-only">(current)</span></a></li>
+			<li><a [routerLink]="['app-property']">Property</a></li>
+			<li><a [routerLink]="['app-products']">Products</a></li>
+			<li><a [routerLink]="['app-ratesanddiscount']">Rates & Discounts</a></li>
+			<li><a [routerLink]="['app-crmprofiles']">CRM Profiles</a></li>
+			<li><a [routerLink]="['app-access']">Access</a></li>
+			<li><a [routerLink]="['app-billingaccount']">Billing Account</a></li>
+			<li><a [routerLink]="['app-onlinepayments']">Online Payments</a></li>
+		</ul>
+
+	</div>
+	<!-- /.navbar-collapse -->
+	<!-- /.container-fluid -->
+</nav>
+
+
+
+<router-outlet></router-outlet>

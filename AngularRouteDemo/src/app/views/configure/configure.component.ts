@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./configure.component.css']
 })
 export class ConfigureComponent implements OnInit {
-
+  // private IMAGES = require('../assets/images');
   constructor() { }
 
   ngOnInit() {

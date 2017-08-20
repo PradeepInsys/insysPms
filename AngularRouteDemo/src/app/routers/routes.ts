@@ -13,6 +13,9 @@ import { CrmprofilesComponent } from '../views/configure/crmprofiles/crmprofiles
 import { AccessComponent } from '../views/configure/access/access.component';
 import { BillingaccountComponent } from '../views/configure/billingaccount/billingaccount.component';
 import { OnlinepaymentsComponent } from '../views/configure/onlinepayments/onlinepayments.component';
+import { ListusersComponent } from '../views/configure/users/listusers/listusers.component';
+import { CreateuserComponent } from '../views/configure/users/createuser/createuser.component';
+import { RoomtypesComponent } from '../views/configure/products/roomtypes/roomtypes.component';
 
 
 
@@ -25,9 +28,23 @@ export const routes: Routes = [
   { path: 'app-configure', component: ConfigureComponent,
     children: [
       { path: '', redirectTo: 'app-users', pathMatch: 'full' },
-      { path: 'app-users', component: UsersComponent },
+      { path: 'app-users', component: UsersComponent,
+      children: [
+      { path: '', redirectTo: 'app-createuser', pathMatch: 'full' },
+      { path: 'app-createuser', component: CreateuserComponent },
+      { path: 'app-listusers', component: ListusersComponent}
+
+      ],
+       },
       { path: 'app-property', component: PropertyComponent },
-      { path: 'app-products', component: ProductsComponent },
+      { path: 'app-products', component: ProductsComponent,
+            children: [
+      { path: '', redirectTo: 'app-viewroomtypes', pathMatch: 'full' },
+      { path: 'app-viewroomtypes', component: RoomtypesComponent }
+     // { path: 'app-createroomtyes', component: ListusersComponent}
+
+      ],
+            },
       { path: 'app-ratesanddiscount', component: RatesanddiscountComponent },
       { path: 'app-crmprofiles', component: CrmprofilesComponent },
       { path: 'app-access', component: AccessComponent },

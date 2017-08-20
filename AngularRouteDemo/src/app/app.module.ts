@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing, appRoutingProviders } from './routers/routes';
+import {DataTableModule} from 'angular2-datatable';
 
 import { AppComponent } from './app.component';
 import { ConfigureComponent } from './views/configure/configure.component';
@@ -15,6 +16,9 @@ import { CrmprofilesComponent } from './views/configure/crmprofiles/crmprofiles.
 import { AccessComponent } from './views/configure/access/access.component';
 import { BillingaccountComponent } from './views/configure/billingaccount/billingaccount.component';
 import { OnlinepaymentsComponent } from './views/configure/onlinepayments/onlinepayments.component';
+import { ListusersComponent } from './views/configure/users/listusers/listusers.component';
+import { CreateuserComponent } from './views/configure/users/createuser/createuser.component';
+import { RoomtypesComponent } from './views/configure/products/roomtypes/roomtypes.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +34,15 @@ import { OnlinepaymentsComponent } from './views/configure/onlinepayments/online
     CrmprofilesComponent,
     AccessComponent,
     BillingaccountComponent,
-    OnlinepaymentsComponent
+    OnlinepaymentsComponent,
+    ListusersComponent,
+    CreateuserComponent,
+    RoomtypesComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    DataTableModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

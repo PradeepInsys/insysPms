@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 import { routing, appRoutingProviders } from './routers/routes';
 import {DataTableModule} from 'angular2-datatable';
 
@@ -19,6 +21,11 @@ import { OnlinepaymentsComponent } from './views/configure/onlinepayments/online
 import { ListusersComponent } from './views/configure/users/listusers/listusers.component';
 import { CreateuserComponent } from './views/configure/users/createuser/createuser.component';
 import { RoomtypesComponent } from './views/configure/products/roomtypes/roomtypes.component';
+import { ViewpropertyComponent } from './views/configure/property/viewproperty/viewproperty.component';
+import { EditpropertyComponent } from './views/configure/property/editproperty/editproperty.component';
+import { UploadimageComponent } from './views/configure/property/uploadimage/uploadimage.component';
+import { EditimagesComponent } from './views/configure/property/editimages/editimages.component';
+import { RoomlistComponent } from './views/configure/property/roomlist/roomlist.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +44,12 @@ import { RoomtypesComponent } from './views/configure/products/roomtypes/roomtyp
     OnlinepaymentsComponent,
     ListusersComponent,
     CreateuserComponent,
-    RoomtypesComponent
+    RoomtypesComponent,
+    ViewpropertyComponent,
+    EditpropertyComponent,
+    UploadimageComponent,
+    EditimagesComponent,
+    RoomlistComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,14 @@
-<p>
-  property works!
-</p>
+
+
+<div class="col-lg-3">
+
+	<ul class="nav nav-pills nav-stacked">
+		<li><a [routerLink]="['app-viewproperty']">View Property</a></li>
+		<li><a [routerLink]="['app-editproperty']">Edit Property</a></li>
+		<li><a [routerLink]="['app-roomlist']">Room List</a></li>
+		<li><a [routerLink]="['app-uploadimage']">Upload Image</a></li>
+		<li><a [routerLink]="['app-editimages']">Edit Image</a></li>
+	</ul>
+</div>
+
+<router-outlet></router-outlet>

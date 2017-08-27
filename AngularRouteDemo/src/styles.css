@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
+
+/* BASIC THEME CONFIGURATION */ 
+ /* theme choose https://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html*/
+body {
+    color: #173e43;
+	background: #ffffff;
+    font-family: 'Ruda', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size:13px;
+}
+
+header {
+    color: ##3b3a36;
+	background: #c0dfd9;
+      border-bottom: 1x solid #b3c2bf;
+        
+    }
+     
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #b3c2bf;
+}
+
+h4 {
+	    color: #3fb0ac;
+	
+}
+
+.requiredfeild {
+  color: red;
+      font-size:18px;
+  
+}
+
+.navbar-default {
+	background: ##e9ece5;
+	}
+
+	.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a {
+		background: #b3c2bf;
+	
+ }
+ 
+ .navbar-brand,
+.navbar-nav > li > a {
+	  color: #3b3a36;
+	
+}
+ 

@@ -16,12 +16,13 @@ import { OnlinepaymentsComponent } from '../views/configure/onlinepayments/onlin
 import { ListusersComponent } from '../views/configure/users/listusers/listusers.component';
 import { CreateuserComponent } from '../views/configure/users/createuser/createuser.component';
 import { RoomtypesComponent } from '../views/configure/products/roomtypes/roomtypes.component';
+import { ViewpropertyComponent } from '../views/configure/property/viewproperty/viewproperty.component';
+import { EditpropertyComponent } from '../views/configure/property/editproperty/editproperty.component';
+import { UploadimageComponent } from '../views/configure/property/uploadimage/uploadimage.component';
+import { EditimagesComponent } from '../views/configure/property/editimages/editimages.component';
+import { RoomlistComponent } from '../views/configure/property/roomlist/roomlist.component';
 
 
-
-
-import { IndiprofileComponent } from '../views/frontdesk/indiprofile/indiprofile.component';
-import { NonindiprofileComponent } from '../views/frontdesk/nonindiprofile/nonindiprofile.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'app-frontdesk', pathMatch: 'full' },
@@ -36,7 +37,16 @@ export const routes: Routes = [
 
       ],
        },
-      { path: 'app-property', component: PropertyComponent },
+      { path: 'app-property', component: PropertyComponent,
+      children: [
+      { path: '', redirectTo: 'app-viewproperty', pathMatch: 'full' },
+      { path: 'app-viewproperty', component: ViewpropertyComponent },
+      { path: 'app-editproperty', component: EditpropertyComponent },
+      { path: 'app-roomlist', component: RoomlistComponent },
+      { path: 'app-uploadimage', component: UploadimageComponent },
+      { path: 'app-editimages', component: EditimagesComponent }
+      ],
+      },
       { path: 'app-products', component: ProductsComponent,
             children: [
       { path: '', redirectTo: 'app-viewroomtypes', pathMatch: 'full' },
@@ -55,8 +65,6 @@ export const routes: Routes = [
   { path: 'app-frontdesk', component: FrontdeskComponent,
     children: [
       // { path: '', redirectTo: 'app-indiprofile', pathMatch: 'full' },
-      { path: 'app-indiprofile', component: IndiprofileComponent },
-      { path: 'app-nonindiprofile', component: NonindiprofileComponent }
     ]
   }
 ];

@@ -13,8 +13,8 @@ body {
 }
 
 header {
-    color: ##3b3a36;
-	background: #c0dfd9;
+    color: white;
+	background: #ffc04c;
       border-bottom: 1x solid #b3c2bf;
         
     }
@@ -27,10 +27,19 @@ hr {
 }
 
 h4 {
-	    color: #3fb0ac;
+	    color: #ffa500;
 	
 }
 
+h5 {
+	    color: #3D362D;
+	
+}
+
+h6 {
+	    color: #336688;
+	
+}
 .requiredfeild {
   color: red;
       font-size:18px;
@@ -38,18 +47,39 @@ h4 {
 }
 
 .navbar-default {
-	background: ##e9ece5;
+	background: #FEFFFD;
 	}
 
-	.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .active > a {
-		background: #b3c2bf;
-	
+		background: #665847;
+    color: white;
  }
  
  .navbar-brand,
 .navbar-nav > li > a {
-	  color: #3b3a36;
+	  color: #ffd27f;
 	
 }
+
+.nav-pills > li > a {
+  
+	color: #665847;
+	      font-size:13px;
+	
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #337ab7;
+}
+
  
+
+.label-info {
+  background-color: white;
+ 	color: #6599FF;
+ 	font-size:13px;
+ 	 
+ }
